@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ödev Form</title>
+    <style>
+        .form-group{
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .form-group2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+        }
+        .form-group label{
+            width: 150px;
+        }
+        .genislik{
+            border: 4px; width: 800px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>"ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)"</h1>
+    </div>
+
+    <form action="resultodev.html" method="get">
+      <div class="genislik">
+        <fieldset>
+          <legend>Sözleşme Onayı</legend>
+          <input type="checkbox" name="onay" id="onay" />
+          <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label>
+          <br>
+          <input type="submit" value="Formu Kaydet" />
+          <input type="reset" value="Formu Temizle">
+        </fieldset>
+      </div>
+
+      <br />
+
+      <div class="genislik">
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <div class="form-group">
+              <label for="guvenlik">Form Güvenlik ID</label>
+              <input type="text" name="Güvenlik ID" id="guvenlik" placeholder="asdfgh" />  
+            </div>
+            <div class="form-group">
+                <label for="name">Ad</label>
+                <input type="text" name="Adı" id="name"/>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="surname">Soyad</label>
+                <input type="text" name="Soyadı" id="surname"/>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="age">Yaş</label>
+                <input type="number" name="Yaşı" id="age" />
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="mail">Mail Adresi</label>
+                <input type="text" name="e-mail Adresi" id="mail"/>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="file">Fotoğraf Ekle</label>
+                <input type="file" name="Seçilen Dosya" id="file" placeholder="Dosya Seçilmedi"/>
+                <br />
+            </div>
+          
+            
+          
+        </fieldset>
+      </div>
+
+      <br />
+      <div class="genislik">
+        <fieldset>
+          <legend>Diğer Bilgiler</legend>
+          <div>
+            <label style="margin-left: 50px;"><strong>Buradaki Alanlar Mesleki Deneyimi Kapsar</strong></label>
+          </div>
+          <br>
+
+        <div class="form-group">
+            <label for="date" style="margin-right: 150px;">Sektöre Giriş Tarihi</label>
+            <input type="date" name="Giriş Tarihi" id="date">
+            <br>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="deneyim" style="margin-right: 150px;">Sektör Deneyimi</label>
+            </div>
+            <div class="form-group2">
+                <div>
+                    <input type="radio" name="Sektör Deneyimi" id="deneyim">
+            <label for="deneyim">1-5 Yıl</label>
+                </div>
+                <div>
+                    <input type="radio" name="Sektör Deneyimi" id="deneyim">
+            <label for="deneyim">6-10 Yıl</label>
+                </div>
+                <div>
+                    <input type="radio" name="Sektör Deneyimi" id="deneyim">
+            <label for="deneyim">11-15 Yıl</label>
+                </div>
+                <div>
+                    <input type="radio" name="Sektör Deneyimi" id="deneyim">
+            <label for="deneyim">15-üzeri</label>
+                </div>
+
+            </div>
+            
+            
+        </div>
+          
+        <div class="form-group">
+            <label for="diller" style="margin-right: 150px;">Programlama Dilleri</label>
+            <select name="Programlama Dili" id="diller" size="5" multiple>
+            <option value="C#">C#</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+        </fieldset>
+      </div>
+
+      <br />
+      <div class="genislik">
+        <fieldset>
+          <legend>Sözleşme Kopyası</legend>
+          <label for="sozlesme"></label>
+          <textarea name="sozlesme" id="sozlesme" rows="5" cols="40">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum aut vitae esse rerum aspernatur quis, fugit facere iste. Harum porro, sapiente cupiditate totam ullam nobis officiis quaerat doloremque molestiae dignissimos quisquam? Odio pariatur blanditiis explicabo cum ipsa non reprehenderit autem necessitatibus delectus eligendi. Dolorum autem sequi rerum minima, corporis laboriosam!</textarea>
+        </fieldset>
+      </div>
+
+      <br />
+      <div class="genislik">
+        <fieldset>
+          <legend>Mail Listesi</legend>
+
+          <label for="mail_list">Mail listesine katılmak istiyorum</label>
+          <input type="radio" name="Mail listesi İsteği" id="mail_list">
+          <br>
+          <label for="mail_list">Mail listesine katılmak istemiyorum</label>
+          <input type="radio" name="Mail listesi İsteği" id="mail_list">
+        </fieldset>
+      </div>
+
+      <br /><br /><br /><br /><br /><br />
+      
+    </form>
+  </body>
+</html>
