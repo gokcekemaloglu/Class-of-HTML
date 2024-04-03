@@ -1,0 +1,33 @@
+*{
+    border: 2px solid black;
+}
+
+
+body{
+    background-color: bisque;
+}
+
+
+
+h1{
+    color: red;
+    border: 2px solid black;
+}
+li{
+    color: green;
+    list-style-type: none;
+    margin: 5px;
+}
+
+.lili{
+    /* background-color: crimson; */
+}
+
+#rengn{
+    /* background-color: chartreuse; */
+}
+
+.list{
+    /* background-color: aqua;
+    padding: 1rem; */
+}
