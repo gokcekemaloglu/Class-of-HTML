@@ -3,14 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-intro</title>
+    <title>CSS intro</title>
+
+    <style>
+        /* par1'i etkilemedi çünkü inline'ı var. Özel genele baskın oldu */
+        #par1{
+            background-color: red;
+        }     
+        
+
+        /* internal CSS */
+        #par2{
+            background-color: blueviolet;
+        }      /* önce link verildiği için external baskın oldu */
+        
+    </style>
+
+    <link rel="stylesheet" href="intro.css">
 </head>
 <body>
+     <!-- 
+   * Inline CSS, HTML elementlerine style keyword'u ile eklenir.
+   * style kelimesinin ici aslinda CSS alanidir.
+   * Sadece eklenen element icin bir stillendirme gerceklestirir.
+   * Bu sebeple cok pratik bir yontem degildir.
+   * HTML kodlarini kalabaliklastirdigi icin kodun gorunumunu karmasiklastirir.
+ -->
+
     <h1>CSS-intro</h1>
 
     <p id="par1" style="background-color: orange;">Inline CSS</p>
     <p id="par2">Internal CSS</p>
-    <p id="par3">External CSS</p>
-    
+    <!--  harici bir dosya oluşturup buraya bağlıyoruz -->
+    <p id="par3">External CSS</p>  
+
+
+    <p class="ortak">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut?
+    </p>
+    <p class="ortak">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut?
+    </p>
+    <p class="ortak" id="paragraf3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut?
+    </p>
+    <!-- id class'dan önceliklidir!!!! -->
+    <p class="ortak">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aut?
+    </p>
+
 </body>
 </html>
