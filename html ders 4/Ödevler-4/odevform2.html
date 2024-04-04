@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ödev Form 2</title>
-    <style></style>
+    <style>
+        .bicim{
+            border: 6px;
+            width: 800px;
+        }
+        .hizalama{}
+    </style>
 </head>
 <body>
-    <div>
+    <div class="bicim">
         <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)</h1>
     </div>
     <form action="resultodev2.html" method="get">
@@ -59,15 +65,34 @@
         <div class="bicim">
             <fieldset>
                 <legend>Diğer Bilgiler</legend>
-                <div><label for=""><strong>Buradaki Alanlar Mesleki Deneyimi Kapsar</strong></label></div>
+                <div><label for="" style="margin-left: 50px;"><strong>Buradaki Alanlar Mesleki Deneyimi Kapsar</strong></label></div>
                 
-                <br><br>
-                <div class="genislik">
+                <br>
+                <div class="hizalama">
                     <label for="date">Sektöre Giriş Tarihi</label>
-                    <input type="date" name="Giriş Tarihi" id="date"> 
+                    <input type="date" name="Giriş Tarihi" id="date">
+                    
                 </div>
-                <div class=""></div>
-                <div class=""></div>
+                <div class="hizalama">
+                    <div>
+                        <label for="deneyim" style="margin-right: 150px;">Sektör Deneyimi</label>
+                    </div>
+                    <div class="">
+                        <div>
+                            <input type="radio" name="Sektör Deneyimi" id="deneyim"
+                        </div>
+                    </div>
+                </div>
+                <div class="hizalama">
+                    <label for="diller" style="margin-right: 150px;">Programlama Dilleri</label>
+                    <select name="Programlama Dilleri" id="diller" size="5" >
+                        <option value="C#">C#</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Java">Java</option>
+                        <option value="JavaScrip">JavaScript</option>
+                        <option value="Phyton">Phyton</option>
+                    </select>
+                </div>
 
                 
 
