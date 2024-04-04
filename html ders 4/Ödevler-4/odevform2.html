@@ -6,10 +6,14 @@
     <title>Ödev Form 2</title>
     <style>
         .bicim{
-            border: 10px; width: 700px;
+            /* border: 10px; width: 700px; */
         }
-        .genislik{
-            margin-right: 70px;
+        .genislik label{
+            /* width: 150px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px; */
+
         }
     </style>
 </head>
@@ -26,6 +30,7 @@
             </fieldset>
         </div>
         <br>
+
         <div class="bicim">
             <fieldset>
                 <legend>Kişisel Bilgiler</legend>
@@ -33,36 +38,73 @@
                     <label for="guvenlik">Form Güvenlik ID</label>
                     <input type="text" name="" id="guvenlik" value="asdfgh">
                 </div>
-                <div class="genislik"></div>
-                <div class="genislik"></div>
-                <div class="genislik"></div>
-                <div class="genislik"></div>
-                <div class="genislik"></div>
+                <div class="genislik">                    
+                    <label for="name">Ad</label>
+                    <input type="text" name="Adı" id="name">
+                </div>
+                <div class="genislik">                    
+                    <label for="sname">Soyad</label>
+                    <input type="text" name="Soyadı" id="sname">
+                </div>
+                <div class="genislik">                    
+                    <label for="age">Yaş</label>
+                    <input type="text" name="Yaşı" id="age">
+                </div>
+                <div class="genislik">                    
+                    <label for="email">Mail Adresi</label>
+                    <input type="text" name="Mail Adresi" id="email">
+                </div>
+                <div class="genislik">                    
+                    <label for="photo">Fotoğraf Ekle</label>
+                    <input type="text" name="Fotoğraf" id="photo">
+                </div>
+
             </fieldset>
         </div>
         <br>
+
         <div class="bicim">
             <fieldset>
                 <legend>Diğer Bilgiler</legend>
+                <div><label for=""><strong>Buradaki Alanlar Mesleki Deneyimi Kapsar</strong></label></div>
+                
+                <br><br>
+                <div class="genislik">
+                    <label for="date">Sektöre Giriş Tarihi</label>
+                    <input type="date" name="Giriş Tarihi" id="date"> 
+                </div>
+                <div class=""></div>
+                <div class=""></div>
+
+                
+
             </fieldset>
         </div>
         <br>
+
         <div class="bicim">
             <fieldset>
                 <legend>Sözleşme Kopyası</legend>
+                <div>
+                    <textarea name="Sözleşme Kopyası" id="sozlesme" cols="30" rows="5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In corporis reiciendis repellat quia explicabo vitae atque dicta. Libero voluptatem, non architecto ratione optio molestias aliquid ipsam vero. Delectus vitae, similique debitis reprehenderit possimus nobis eos esse, ratione animi cum nemo aliquid labore. Numquam assumenda earum, quos distinctio nobis quaerat debitis magnam modi, blanditiis possimus commodi? Laudantium, modi magnam! Aut omnis dolore pariatur accusantium quaerat. </textarea>
+                </div>
             </fieldset>
         </div>
         <br>
+
         <div class="bicim">
             <fieldset>
                 <legend>Mail Listesi</legend>
+                
+                <label for="maillist">Mail Listesine Katılmak <strong>İstiyorum</strong></label>
+                <input type="radio" name="Katılma isteği" id="maillist">
+                <br>
+                <label for="maillist">Mail Listesine Katılmak <strong><ins>İstemiyorum</ins></strong></label>
+                <input type="radio" name="Mail Listkatılma isteği" id="maillist">                
             </fieldset>
         </div>
         <br>
+
     </form>
-    
-
-
-
 </body>
 </html>
