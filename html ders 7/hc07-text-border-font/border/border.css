@@ -1,0 +1,54 @@
+#par1{
+    border: 3px dotted red;
+}
+#par2{
+    color: magenta;
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+}
+#par3{
+    border: 8px double fuchsia;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+#par4{
+    border: 5px dashed teal;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#par5{
+    border: 10px outset darkorange;
+    padding: 20px;
+}
+
+.wrapper{
+    border: 3px solid rebeccapurple;
+}
+.kutu1{
+    border: 5px solid blue;
+    width: 40%;
+    height: 150px;
+    margin-right: 50px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.kutu2{
+    border: 5px solid limegreen;
+    width: 40%;
+    height: 150px;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-block;
+}
