@@ -1,3 +1,28 @@
 ul{
-    list-style-type: "😍";
+    /* border: 2px solid purple; */
+    /* padding: 10px; */
+    /* list-style-type:circle; */
+    /* list-style-position: inside;ß */
+    /* list-style-type: "💋";ß */
+    /* list-style-type: "\1F618";ß */
+    list-style-image: url(./img/earlybirds.svg);
+    /* list-style-type: none; */
+}
+
+li{
+    border: 3px solid darkorange;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    color: blue;
+    border-left: 10px solid grey;
+}
+
+li::before{
+    content: '😎';
+}
+
+li::after{
+    content: '🤩';
 }
