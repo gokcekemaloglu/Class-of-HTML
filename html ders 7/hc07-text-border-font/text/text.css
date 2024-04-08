@@ -10,20 +10,44 @@ h1{
 #par1{
     color: blue;
     text-align: center;
+    font-size: 1.3rem;
+    text-shadow: 5px 5px 10px black;
+    column-count: 3;
+    column-rule: 3px solid red;
+    /* -webkit-column-count: 3;
+    -moz-column-count: 3;
+    websitesine uyumluluk için yazmak gerekebilir, uyumsuzluk olursa */
 }
 #par2{
     text-align: right;
+    direction: rtl;
 }
 #par3{
     text-align: justify;
+    background-color: rgba(0, 0, 0, 0.493);
+    color: yellow;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    text-indent: 30px;
 }
 #par4{
     color: green;
     text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 10px;
 }
 #par5{
-    text-transform: capitalize;
+    text-transform: uppercase;
+    text-decoration: overline wavy;
 }
 #par6{
-
+text-transform: capitalize;
+/* text-decoration: line-through overline underline orange; */
+direction: rtl;
+unicode-bidi: bidi-override;  
+/* tersten yazma */
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
