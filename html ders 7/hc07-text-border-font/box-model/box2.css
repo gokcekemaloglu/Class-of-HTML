@@ -1,26 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
 .container{
-    background-color: darkorange;
-    border: 1px solid red;
+    background-color: orange;
+    /* margin: 30px; */
 }
 
 .box1{
-    width: 200px;
-    height: 200px;
-    background-color: fuchsia;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 255, 0.801);
 }
 
 .box2{
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
-    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 0, 0.432);
+    margin: 10px;
     margin-top: -20px;
     border: 2px solid red;
+    padding: 20px;
 }
 
 .box3{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: green;
     margin-top: -20px;
 }
