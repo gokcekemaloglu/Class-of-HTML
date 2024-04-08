@@ -1,0 +1,27 @@
+.container{
+    background-color: darkorange;
+    border: 1px solid red;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin-left: 20px;
+    margin-top: -20px;
+    border: 2px solid red;
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-top: -20px;
+}
+
