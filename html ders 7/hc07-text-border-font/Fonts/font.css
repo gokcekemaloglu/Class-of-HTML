@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Glass+Antiqua&family=Satisfy&display=swap') 
+/* bunu google fontsda get embadded da import kısmından alıyoruz */
+
+.font1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.font2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font3{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: "Satisfy", cursive;
+}
+
+.font4{
+    /* font-family: "Poiret One", sans-serif; */
+    font-family: "Benne", serif;
+}
+
+.font5{
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* lokalimde olan birşeyi kullanmak için */
+@font-face {
+    font-family: "gokce";
+    src: url(./Font/Ephesis-Regular.ttf);
+}
+.font6{
+    font-family: "gokce";
+}
