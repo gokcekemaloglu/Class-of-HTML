@@ -1,0 +1,57 @@
+*{
+
+}
+
+body{
+    border: 3px solid red;
+    width: 800px;
+    margin-left: 100px;
+}
+
+.title{
+    /* border: 3px solid red; */
+    text-align: center;
+}
+
+.form-group{
+    /* border: 3px solid red; */
+
+}
+
+.icerik label{
+    width: 140px;
+}
+
+.icerik{
+    /* border: 3px solid red; */
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 3px;
+}
+
+#description{
+    margin-left: 100px;
+}
+
+.icerik2 label{
+    width: 150px;
+    margin-right: 150px;
+}
+
+.icerik2{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;    
+}
+
+.sene{
+    display: flex;
+    border: 3px solid purple;
+    flex-direction: column;
+}
+
+.diger{
+    display: flex;    
+}
+
+
