@@ -1,0 +1,73 @@
+main{
+    background-color: aqua; 
+    width: 100%;
+    /* position: relative; */
+    padding: 5px;
+    position: relative;
+    margin: 50px auto 1000px;
+}
+
+.box1{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+.box2{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.box3{
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* right: 0;
+    top: 0; */
+}
+
+.par1{
+    background-color: olive;
+}
+
+.icerde{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#sticky{
+    background-color: greenyellow;
+    position: sticky;
+    top: 0;
+}
+
+h1{
+    background-color: red;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav{
+    background-color: gray;
+    border-radius: 50px;
+    padding: 50px;
+    text-align: center;
+    color: yellow;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
