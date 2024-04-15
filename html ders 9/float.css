@@ -1,0 +1,56 @@
+
+
+.img-float{
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.par1{
+    background-color: coral;
+}
+
+/* floattan kaynaklanan deformasyonu engellemek ve bir sonraki paragrafın üsttekiyle iç içe girmesini engellemek için clear yapmak gerek */
+
+.par2{
+    background-color: chartreuse;
+    /* clear: left; */
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    border: 3px solid red;
+}
+
+.box{
+    float: left;
+    width: 33%;
+    height: 100px;
+    background-image: url("https://picsum.photos/id/211/600/400");
+}
+.box1{
+    background-color: purple;
+    /* float: left;
+    width: 33%; */
+}
+.box2{
+    background-color: gold;
+    /* float: left;
+    width: 33%; */
+    height: 250px;
+}
+.box3{
+    background-color: magenta;
+    /* float: left;
+    width: 33%; */
+    height: 350px;
+    background-image: url("https://picsum.photos/id/1025/600/400");
+    background-size: cover;
+    width: 50%
+}
+
