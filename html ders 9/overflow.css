@@ -48,5 +48,5 @@ p{
 .box4::-webkit-scrollbar-track{
     background-color: #f1f1f1;
     border-radius: 10px;
-    height: 1px;
+    /* height: 1px; */
 }

@@ -29,7 +29,10 @@ main{
     background-color: coral;
     width: 100px;
     height: 100px;
-    position: absolute;
+    position: sticky;
+    left: 50px;
+    top: 100px;
+    /* position: absolute; */
     /* right: 0;
     top: 0; */
 }
@@ -58,6 +61,11 @@ h1{
     position: sticky;
     top: 0;
     z-index: 2;
+}
+
+.last{
+    background-color: purple;
+    width: 200%;
 }
 
 nav{

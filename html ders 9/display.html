@@ -19,6 +19,7 @@
             margin-top: 500px;
             /* display: inline-block; */
             /* padding: 50px; */
+            
             /* alıyor gibi görünsede yukardan ve aşağıdan padding almıyor inline elementler.
             Eğer inline ise yukardan ve aşağıdan margin padding vermeyeceğiz etkilemiyor. sadece sağdan ve soldan oluyor .
             inline elementler width, height, margin, padding bottom almazlar*/
@@ -60,8 +61,8 @@
             /* visibility: hidden;    */
             /* visibility hidden tamamen yok etmiyor, görünüşü gidiyor, yeri kalıyor */
         }
-
     </style>
+
 </head>
 <body>
     <h1>Display</h1>
@@ -80,7 +81,7 @@
     <div class="box box3">kutu3</div>
     <br>
     <div class="box box4">kutu4</div>
-    <div class="box box5">kutu5</div>
+    <div class="box box5" onclick="this.style.visibility='hidden'">kutu5</div>
     <div class="box box6">kutu6</div>
 
 </body>
