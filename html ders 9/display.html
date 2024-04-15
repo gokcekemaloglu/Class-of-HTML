@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
+
+    <style>
+        h1{
+            background-color: teal;
+            width: 50%;
+        }
+
+        a{
+            background-color: orange;
+            margin: 50px;
+            margin-top: 500px;
+            /* display: inline-block; */
+            /* padding: 50px; */
+            /* alıyor gibi görünsede yukardan ve aşağıdan padding almıyor inline elementler.
+            Eğer inline ise yukardan ve aşağıdan margin padding vermeyeceğiz etkilemiyor. sadece sağdan ve soldan oluyor .
+            inline elementler width, height, margin, padding bottom almazlar*/
+        }
+
+        span{
+            background-color: magenta;
+            width: 5000px;
+            /* display: inline-block; */
+            display: block;
+        }
+
+        button{
+            padding: 50px;
+        }
+
+        #gokce{
+            display: block;
+            background-color: red;
+        }
+
+        .box{
+            margin-top: 50px;
+            background-color: fuchsia;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .box2{
+            background-color: olive;
+            /* display: none; */
+            /* tamamen yok ediyor */
+            
+        }
+
+        .box5{
+            background-color: teal;
+            /* visibility: hidden;    */
+            /* visibility hidden tamamen yok etmiyor, görünüşü gidiyor, yeri kalıyor */
+        }
+
+    </style>
 </head>
 <body>
     <h1>Display</h1>
+
+    <!-- inline - inline-block elementler -->
+
+    <a href="">Clarusway</a>
+    <strong id="gokce">Gokce</strong>
+    <button>Clarusway</button>
+    <span>Heloo my name is span</span>
+
+    <!-- Block Elementler -->
+
+    <div class="box box1">kutu1</div>
+    <div class="box box2" onclick="this.style.display='none'">kutu2</div>
+    <div class="box box3">kutu3</div>
+    <br>
+    <div class="box box4">kutu4</div>
+    <div class="box box5">kutu5</div>
+    <div class="box box6">kutu6</div>
+
 </body>
 </html>
