@@ -1,0 +1,56 @@
+body{
+    border: 3px solid black;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+header{
+    border: 3px solid black;
+    text-align: center;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+main{
+    border: 3px solid black;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* height: 500px; */
+}
+
+aside{
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #B8860B;
+    float: left;
+    height: 300px;
+    width: 25%;    
+}
+
+article{
+    border: 3px solid black;
+    text-align: center;
+    background-color: chartreuse;
+    border-radius: 10px;
+    float: left;
+    height: 300px;
+    width: 70%;
+    overflow: auto;
+}
+
+footer{
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: darkorange;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
