@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    /* background-image: url(../3-background/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: lefttop; */
+    text-align: center;
+    background:linear-gradient(60deg,rgb(255, 255, 0,0.3),rgb(165, 42, 42,0.7)), url(../3-background/background.jpg)no-repeat left top;
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+}
+
+p{
+    color: wheat;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
