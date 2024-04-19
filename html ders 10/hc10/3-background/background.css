@@ -1,0 +1,26 @@
+.container{
+    width: 20rem;
+    height: 20rem;
+    background-color: cornflowerblue;
+    margin: auto;
+    /* background-image: linear-gradient(to right, orange, blue, red);
+    veya
+    background-image: linear-gradient(45deg, orange, blue, red);
+     */
+     /* background-image: url(./background.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: left top; */
+     /* yukarıdakilerin hepsini vermek yerine shorthand aşağıyı yapabiliriz. */
+     background: linear-gradient(60deg,rgb(137,137,203,0.7),rgb(191,97,97,0.7)),url(./background.jpg), no-repeat left top; background-size: cover;
+     text-align: center;
+     position: relative;
+     overflow: auto;
+}
+
+p{
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}

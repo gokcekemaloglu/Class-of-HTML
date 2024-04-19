@@ -1,0 +1,53 @@
+/* html{
+    font-size: 100px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.abs{
+    font-size: 50px;
+}
+
+.rel1{
+    background-color: crimson;
+    width: 50%;
+}
+
+.rel2{
+    background-color: aqua;
+    width: 50%;
+}
+
+/* vw görünen ekranın genişliğine göre yüzdesini kapsar. %ler içinde bulunduğu container'ın kapladığı alana göre yüzdesini kapsar */
+
+.rel3{
+    background-color: yellow;
+    width: 50vw;
+}
+
+.card{
+    border: 1px solid red;
+    width: 50%;
+    height: 500px;
+}
+card'a
+/* card'a height vermezsek card img'de height'ın hiç bir işlevi yok. */
+.card img{
+    width: 100%;
+    /* height: 70%; */
+    height: 100%;
+}
+
+/* bu ekstra ertesi gün yapıldı */
+
+.outline{
+    margin: 2rem;
+    background-color: magenta;
+    display: inline;
+    padding: 10px;
+    outline: 5px solid black;
+    border-le;
+}

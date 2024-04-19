@@ -1,0 +1,50 @@
+.box{
+    border: 5px solid black;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 4rem;
+    background-color: bisque;
+    text-shadow: 5px 5px 5px black;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+}
+
+.box1{
+    overflow: visible;
+}
+
+.box2{
+    overflow: hidden;
+}
+
+.box3{
+    overflow: scroll;
+
+}
+
+.box4{
+overflow: auto;
+}
+
+.box5{
+overflow: auto;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+p{
+    background-color: fuchsia;
+    width: 900px;
+}
+
+.box4::-webkit-scrollbar{
+    /* width: 0; */
+    /* visibility: hidden; */
+    /* display: none; */
+    background-color: orange;
+}
+
+.box4::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 10px;
+}

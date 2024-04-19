@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    background: linear-gradient(60deg,black,red);
+    font-family: "Rowdies", sans-serif;
+}
+
+.header img{
+    width: 60px;
+    margin-left: 2rem;
+}
+
+.register{
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 1.5rem;
+}
+
+ul{
+    color: white;
+    font-family: "Rowdies", sans-serif;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0.8rem;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.carousel{
+    height: 70vh;
+    background: linear-gradient(60deg,rgba(3, 3, 3, 0.3),rgba(224, 5, 5, 0.7)),url(./images/fast-food.jpg);
+    background-size: cover;
+    background-position: right bottom 30%;
+    position: relative;
+}
+
+.carousel h2{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+
+    background:  -webkit-linear-gradient(190deg,#790808,#ed7607);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main{
+    height: 20vh;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.footer{
+    background: linear-gradient(60deg,black,red);
+}
+
+.footer p{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
