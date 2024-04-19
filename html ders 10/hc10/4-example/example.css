@@ -8,7 +8,7 @@
 
 .header{
     background: linear-gradient(60deg,black,red);
-    font-family: "Rowdies", sans-serif;
+    /* font-family: "Rowdies", sans-serif; */
 }
 
 .header img{
@@ -68,10 +68,11 @@ main{
 
 .footer{
     background: linear-gradient(60deg,black,red);
+    text-align: center;
 }
 
 .footer p{
     color: white;
     padding: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }

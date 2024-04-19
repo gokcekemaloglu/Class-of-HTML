@@ -13,6 +13,7 @@
      background-position: left top; */
      /* yukarıdakilerin hepsini vermek yerine shorthand aşağıyı yapabiliriz. */
      background: linear-gradient(60deg,rgb(137,137,203,0.7),rgb(191,97,97,0.7)),url(./background.jpg), no-repeat left top; background-size: cover;
+     background-size: cover;
      text-align: center;
      position: relative;
      overflow: auto;

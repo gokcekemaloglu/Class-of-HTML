@@ -2,6 +2,7 @@
     /* border:1px solid red; */
     margin:0;
     padding:0;
+    
 }
 
 /* Root element HTML */
@@ -20,12 +21,19 @@ html{
 
 .card:hover{
     background-color: cadetblue;
-    box-shadow: 3px 3px 3px gray;
+    /* box-shadow: 3px 3px 3px gray; */
 }
 
 .card img{
     width: 100%;
 }
+
+.card img:hover{
+    box-shadow:3px 3px 3px rgb(229, 215, 215);
+    /* border:2px solid red; */
+    
+}
+
 
 .card img+h2{
     color: brown;

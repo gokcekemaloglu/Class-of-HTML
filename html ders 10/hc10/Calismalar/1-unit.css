@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.abs{
+    font-size: 50px;
+}
+
+.rela1{
+    background-color: red;
+    width: 50%;
+}
+
+.rela2{
+    background-color: yellow;
+    width: 50%;
+}
+.rela3{
+    background-color: aquamarine;
+    width: 50vw;
+
+}
+
+.card{
+    border: dashed 5px aqua;
+    text-align: center;
+    width: 50%;
+    height: 50vw;
+    margin: auto;
+}
+
+.card img{
+    width: 50%;
+}
+
+.outline{
+    margin: 30px;
+    width: 100px;
+    padding: 15px;
+    background-color: blueviolet;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: 5px solid black;
+    outline-offset: 12px;
+}
