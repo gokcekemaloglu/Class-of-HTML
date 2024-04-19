@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card{
+    background-color: bisque;
+    width: 50%;
+    margin: 1rem;
+    /* border: 1px solid bisque; */
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+
+.card:hover{
+    background-color: olive;
+}
+
+.card img:hover{
+    border: 2px solid seagreen;
+    box-shadow: 3px 3px 3px lightblue;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card img+h2{
+    color: brown;
+}
+
+.card img+h2::first-letter{
+    font-size: 2.5rem;
+}
+
+.card img+h2::after{
+    content: "💖";
+
+}
+.card img+h2::before{
+    content: "⭐";
+    font-size: 0.5rem;
+}
+
+.card > p::first-line{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
