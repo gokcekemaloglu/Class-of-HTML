@@ -1,0 +1,39 @@
+
+
+.yazi{
+    width: 50vw;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.yazi1{
+    background-color: green;
+    transform: rotateX(50deg);
+}
+
+.yazi2{
+    background-color: lightblue;
+    transform: rotateY(70deg);
+}
+
+.yazi3{
+    background-color: violet;
+    transform: rotate(60deg);
+}
+
+.yazi4{
+    background-color: yellow;
+    transform: scaleX(4);
+}
+
+.yazi5{
+    background-color: olivedrab;
+    transform: scaleY(2);
+}
+
+.yazi6{
+    background-color: aqua;
+    transform: scale(2,3);
+}
+
