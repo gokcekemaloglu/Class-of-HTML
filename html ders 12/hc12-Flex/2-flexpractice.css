@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    width: 40px;
+}
+
+nav{
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+nav .left, nav .middle, nav .right{
+    /* flex grow cürmü kadar yerin dışındakileri eşit büyütür, altına flex basis koyarak tüm boyuttaki büyüklüğünü eşit dağıtır */
+    flex-grow: 1;
+     /*flex-grow:1=>başta cürmü kadar, sonra eşit büyüsünler ama sonuçta hepsi eşit olmamış oluyor. flex-basis:0=>eşit ölçülerde başlasın eşit büyüsün */
+     flex-basis: 0;
+     /* width:33% gibi   */
+     /*!Tüm elemanların (div ler) ekran büyüse de küçülse de eşit miktarda alan tutabilmesine izin ver.3 tane div browser da 3 parçada duracak, flex-basis:0; vermezsek ekran küçülünce ortadaki yazılar cürmü kadar yer alıyor alta inmiyor, eleman çoğaltsakta nav daki yer tamamen bitince iniyor, diğerlerinden daha çok yer kaplıyor. default olan=> flex-basis:auto= ekran küçülünce herkes ihtiyacı kadar yer kaplasın*/
+}
+
+nav .left{
+    background-color: rgb(172, 172, 233);
+    border: 1px solid red;
+}
+
+nav .middle{
+    background-color: rgb(152, 152, 250);
+    border-radius: 10px;
+    /* justify-content: center; */
+    /* justifycontent ortalamadı  */
+    /* text-align: center; */
+    /* eger textalign kalırsa a etiketi havada kalıyor */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* align item'a gerek kalmadı */
+}
+
+nav .right{
+    background-color: rgb(36, 36, 209);
+    border: 1px solid blue;
+    font-size: 40px;
+    text-align: right;
+}
+
+nav .right i{
+    color: black;
+}
+
+nav .middle a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+}
