@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efefef;
+    height: 100vh;
+    font-family: "Bellota", system-ui;
+    font-family: "Judson", serif;
+}
+
+.container{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 50px auto;
+    background-color: #787676;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 500px black;
+}
+
+/* ICONBAR */
+
+.iconbar{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* iki uca gönderebilmek için justify content yapıyoruz */
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.input-part{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    box-shadow: -1px 1px 5px black;
+}
+
+.input-part select{
+    width: 188px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    font-family: "Bellota", system-ui;
+    font-weight: 600;
+}
+
+.search-input{
+    border: 2px solid red;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: stretch;bu default */
+    margin-left: 1rem;
+    border-radius: 5px;
+    border: 1px;
+    background-color: #d9d9d9;
+}
+
+.search-input input{
+    /* taşıyıcısının backgroun'ını alabilsin diye inherit dedik. m,iras al demek */
+    background-color: inherit;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.search-input input:focus{
+    border: none;
+    outline: none;
+    /* üzerindek yazı yazarkenki çizgiler çıkmasın diye bu kısmı yaptık */
+}
+
+.support{
+    text-align: right;
+    margin-left: 1rem;
+}
+
+.support-number{
+    color: black;
+    text-decoration: none;
+}
+
+.support-text{
+    font-size: 0.8rem;
+}
+
+.icons{
+    /* border: 2px solid yellow; */
+    margin-right: 2rem;
+
+}
+
+.icons img{
+    padding: 10px;
+}
+
+/*------------------------------- -->
+/*--             NAVBAR            
+/*----------------------------- -- */
+
+.navbar{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+    margin-left: 3rem;
+}
+
+.button{
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    height: 40px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-style: italic;
+
+}
+
+.nav{
+    /* display: flex;
+    gap: 1rem; */
+    list-style-type: none;
+    margin-left: 1rem;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+/*------------------------------- -->
+/*--             HEADER            
+/*----------------------------- -- */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background-image: url(./img/stock.jpg);
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+}
+
+.essential{
+    background-color: #d5dee5;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;  
+    max-width: 600px;  
+}
+
+.essential-text{
+    padding: 20px;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+}
+
+.lighting{
+    background-color: #ffc868;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+}
+
+.lighting img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.light{
+    /* border: 2px solid red; */
+    width: 80%;
+    float: right;
+    margin-top: 20px;
+    font-style: italic;
+    padding: 2rem;
+}
+
+/* CATEGORY */
+
+.categorySection{
+    background-color: #aea08d;
+}
+
+.category-part,.product-part{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.categories, 
+.products{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.category{
+    width: 20rem;
+    height: 20rem;
+    background-color: #eeecec;
+    padding: 1rem 2px 1rem 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 2px 2px 50px black;
+}
+
+.category img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1rem 10px 1rem 1rem;
+    border-radius: 2rem;
+}
+
+/* ---------------------------------- */
+/*               PRODUCT              */
+/* ---------------------------------- */
+
+.productSection{
+    background-color: #eeecec;
+}
+
+
+/* yukarıda virgül ile aynı özellikleri verbidiğimiz için bu kısım products'a gerek kalmadı */
+.products{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+}
+
+.product{
+    height: 20rem;
+    width: 20rem;
+    background-color: #d9d9d9;
+    margin: 1rem;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.product img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.product p{
+    position: relative;
+    z-index: 4;
+}
+
+.product img:hover{
+    transform: scale(1.08);
+}
+
+/* ---------------------------------- */
+/*               CONTACT              */
+/* ---------------------------------- */
+
+.contact{
+    background-color: #aea08d;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expert{
+    background-color: inherit;
+    /* width: 50%; */
+    flex: 3;
+    padding: 1rem;
+    
+}
+
+span{
+    color: #f37705;
+}
+
+.lookforexpert{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-family: "Bellota", system-ui;
+}
+
+.leaveInfo{
+    font-family: "Judson", serif;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.formSection{
+    /* background-color: teal; */
+    /* width: 50%; */
+    flex: 2;
+    font-size: 1.5rem;
+}
+
+.formElemant{
+    margin: 1.5rem 1rem;
+}
+
+.formElemant input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.submit{
+    padding: 1rem;
+    border-radius: 5px;
+    width: 13rem;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-style: italic;
+    margin-left: 1rem;
+    background-color: #ffc868;
+}
+
+/* ---------------------------------- */
+/*               FOOTER               */
+/* ---------------------------------- */
+
+.copyright{
+    padding: 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    /* background-color: blue; */
+}
+
+.policy{
+    /* background-color: yellow; */
+    display: flex;
+    gap: 1rem;
+}
+
+.policy a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid black;
+}
+
