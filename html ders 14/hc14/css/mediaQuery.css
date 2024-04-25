@@ -1,0 +1,141 @@
+@import "./theme.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
+    font-weight: 500;
+    font-family: var(--ff-montserrat);
+}
+
+body{
+    background-color: var(--mavi-9);
+}
+
+h1{
+    background-color: var(--koyu-kirmizi);
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    margin: 1rem auto;    /* yazının kutusunu ortaladı */
+    padding: 10px 0;
+    font-size: 50px;
+    /* color: white; */  /*sayfa büyükken siyah*/
+}
+
+.header{
+    background-color: var(--koyu-yesil);
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.navbar{
+    background-color: var(--gri-4);
+    text-align: end;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+
+}
+
+.col{
+    padding: 20px;
+    text-align: center;
+}
+
+.col-1{
+    background-color: var(--gri-5);
+    width: 35%;
+}
+
+.col-2{
+    background-color: var(--gri-6);
+    width: 20%;
+}
+
+.col-3{
+    background-color: var(--gri-7);
+    width: 30%;
+}
+
+.col-4{
+    background-color: var(--gri-8);
+    width: 15%;
+}
+
+/*Media Sorguları(Media Query)*/
+
+/*! üstteki stiller  en büyük ekranlarda kullanılsın. ta ki 992px e kadar (tablete kadar). 992px den sonra (tablette) alttaki stiller kullanılmaya başlansın */
+
+@media screen and (max-width:992px) {
+
+    body{
+        background-color: var(--acik-kirmizi);
+        color: white;
+    }
+
+    .col{
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+
+/* yukarıdakini verince aşağıdakilere tek tek vermeye gerek kalmıyor. */
+
+    /* .col-1{        
+        width: 50%;
+    }
+    
+    .col-2{        
+        width: 50%;
+    }
+    
+    .col-3{        
+        width: 50%;
+    }
+    
+    .col-4{        
+        width: 50%;
+    } */
+    
+    
+}
+
+/*! 576px e kadar üstteki stiller kullanılsın (ilk baştakiler ve tablet koduyla ezilenler varsa onlar)  576px ve altında bir alttaki stiller kullanılsın*/
+
+
+@media screen and (max-width:576px) {
+
+    body{
+        background-color: var(--mor-1);
+        /* color: white; */  /*yukarıda bunu verdiğimiz için devamında(küçüldükçe) tekrar yazmaya gerek yok*/
+    }
+
+    .header{
+        display: none;
+    }
+
+    
+    .col{
+        width: 100%;
+        /* margin: 0.5rem 0; */  /*yukarıda(tablette) bunu verdiğimiz için devamında(küçüldükçe) tekrar yazmaya gerek yok, tabletteki burada da geçerli olsun istedim*/
+         /* burada margin vermedik çünkü tablette eklediğim margin burada da geçerli */
+    }
+    
+    .navbar a{
+        display: block;
+        text-align: center;
+    }
+    
+}
