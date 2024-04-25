@@ -1,0 +1,65 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,15vh) 15vh 15vh;
+}
+
+.parca{
+    border: 1px solid red;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parca1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* 1.column'dan başla, 3. column'a kadar git ama 3 dahil değil. [1,3) aralığını kastediyor. */
+    background-color: pink;
+}
+
+.parca4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: olive;
+    /* grid-area: 2/1/4/2; */ /*kısayol*/
+}
+
+.parca6{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    /* kısayol */
+    /* başlangıçrow/başlangıç column/bitiş row/bitiş column */
+    grid-area: 2/3/4/5;
+    background-color: fuchsia;
+}
+
+.parca8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: yellow
+    
+}
+
+.parca9{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    /* grid-area: 4/3/6/4; */ /*kısayol*/
+
+    grid-column: 3;
+    /* çok fazla satır sütun genişletmesi yaptığımızda kutunun yeri değişirse, onun yerini bir başka komutla tekrar belirlemeliyiz(3. komut) */
+    background-color: aqua;
+}
+
+.parca12{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column: 2;
+    background-color: purple;
+}
+
