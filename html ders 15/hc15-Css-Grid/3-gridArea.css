@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 20% 40% 20% 20%;
+
+    grid-template-areas: 
+    "osman osman osman"
+    "ali ali veli"
+    "ece ece ece"
+    "ece ece ece";
+}
+
+.box{
+    background-color: bisque;
+    border: 1px solid red;
+}
+
+
+.box1{
+    /* 1.sütundan 4. sütuna kadar git */
+    /* grid-area: 1/1/2/4; */
+
+    grid-area: osman;
+    background-color: aqua;
+
+}
+
+.box2{
+    /* grid-area: 2/1/3/3; */
+
+    grid-area: ali;
+    background-color: rgba(255, 0, 0, 0.575);
+
+}
+.box3{
+    /* grid-area: 2/1/3/3; */
+
+    grid-area: veli;
+    background-color: orange;
+
+}
+.box4{
+    /* grid-area: 2/1/3/3; */
+
+    grid-area: ece;
+    background-color: pink;
+
+}
+
+
