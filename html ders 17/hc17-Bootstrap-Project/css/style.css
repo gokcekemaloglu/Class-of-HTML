@@ -1,0 +1,98 @@
+:root{
+    --primary-color:#bc6c25;
+    --secondary-color:#4d3822;
+    --hover-color:#e76f51;
+    --section-color:#B78752;
+}
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 5;
+    /* akıştan çıkıp düzenini kaybettiğimiz için width veriyoruz */
+    width: 100%;
+}
+.navbar .container{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar-nav{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: var(--hover-color) !important;
+}
+
+/* ---------------------------------- */
+/*              CAROUSEL              */
+/* ---------------------------------- */
+
+.carousel-item{
+    border: 2px solid red;
+    height: 100vh;
+    /* height: calc(100vh - 130px); navbarın mesafesini çıkararak arkaya resim getirmek için alan açarız, istersek. ama position fixed vererek buna gerek kalmadı. */
+}
+
+.carousel-item img{
+    /* border: 2px solid red; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    /* border: 2px solid red; */
+    bottom: 40%;
+    /* veya */
+    /* margin-bottom: 250px; 
+    ile de yapabiliriz*/
+}
+
+.carousel-caption .btn{
+    background-color: var(--primary-color);
+    border: none;
+    width: 10rem;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-caption .btn:first-child{
+    background-color: transparent;
+}
+
+.carousel-caption .btn:first-child:hover{
+    background-color: white;
+    color: black;
+}
+
+.hero{
+    position: relative;
+    z-index: 3;
+}
+
+.black{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    /* bir kutunun ortasına çekmek için bu aşağıyı yapıyoruz */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(30deg);
+    z-index: 2;
+
+}
+
