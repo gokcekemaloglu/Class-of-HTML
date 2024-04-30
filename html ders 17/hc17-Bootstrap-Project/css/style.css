@@ -35,14 +35,12 @@
     color: var(--hover-color) !important;
 }
 
-/* ---------------------------------- */
-/*              CAROUSEL              */
-/* ---------------------------------- */
+/* CAROUSEL */
 
 .carousel-item{
-    border: 2px solid red;
-    height: 100vh;
+    /* border: 2px solid red; */
     /* height: calc(100vh - 130px); navbarın mesafesini çıkararak arkaya resim getirmek için alan açarız, istersek. ama position fixed vererek buna gerek kalmadı. */
+    height: 100vh;
 }
 
 .carousel-item img{
@@ -53,7 +51,7 @@
 
 .carousel-caption{
     /* border: 2px solid red; */
-    bottom: 40%;
+    bottom: 35%;
     /* veya */
     /* margin-bottom: 250px; 
     ile de yapabiliriz*/
@@ -84,9 +82,8 @@
 
 .black{
     background-color: rgba(0, 0, 0, 0.8);
-    width: 350px;
-    height: 300px;
-    border-radius: 20px;
+    width: 400px;
+    height: 350px;
     /* bir kutunun ortasına çekmek için bu aşağıyı yapıyoruz */
     position: absolute;
     top: 50%;
@@ -95,4 +92,63 @@
     z-index: 2;
 
 }
+
+.carousel-indicators{
+    /* border: 2px solid red; */
+    gap: 0.7rem;
+}
+
+.carousel-indicators button{
+    background-color: var(--primary-color) !important;
+    width: 3rem !important;
+    padding: 0.1rem !important;
+}
+
+/* ABOUT */
+
+section#about{
+    background-color: var(--secondary-color);
+    /* height: 100vh;    */
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.about-image-info{
+    /* border: 2px solid red; */
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(255, 166, 0, 0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+section#about button{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* MEET PEOPLE */
+
+section#people{
+    background-color: var(--section-color)!important;
+
+}
+
+section#people .container{
+    background-color: var(--secondary-color);
+}
+
+section#people .card{
+    /* border: 2px solid red; */
+    background-color: var(--primary-color);
+}
+
+
 
