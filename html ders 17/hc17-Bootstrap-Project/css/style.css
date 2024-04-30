@@ -192,8 +192,14 @@ section#menu button{
     margin-right: 1rem;
 }
 
+/* CONTACT */
+
 section#contact{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(188, 108, 37, 1)),url(../img/slider2.jpg);
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.5), 
+        rgba(188, 108, 37, 1)
+        ), url(../img/slider2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -224,4 +230,10 @@ input::placeholder{
 .google-maps{
     filter: grayscale(100);
     border-radius: 1rem;
+}
+
+/*! ---FOOTER--- */
+
+footer{
+    background-color: var(--primary-color);    
 }
