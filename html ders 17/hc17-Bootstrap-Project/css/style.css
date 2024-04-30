@@ -148,7 +148,80 @@ section#people .container{
 section#people .card{
     /* border: 2px solid red; */
     background-color: var(--primary-color);
+    transition: all 0.5s;
+    overflow: hidden;
 }
 
+section#people .card:hover{
+    transform: scale(1.05);
+    
+}
 
+section#people img{
+    transition: all 0.5s;
+}
 
+section#people img:hover{
+    transform: scale(1.1);
+}
+
+section#people i{
+    transition: all .5s;
+}
+
+section#people i:hover{
+    opacity: 0.5;
+}
+
+/* OUR MENU */
+
+section#menu .container{
+    background-color: var(--primary-color);
+}
+
+section#menu{
+    background-color: var(--secondary-color)!important;
+}
+
+.menu-header{
+    color: var(--primary-color);
+}
+
+section#menu button{
+    background-color: var(--secondary-color);
+    margin-right: 1rem;
+}
+
+section#contact{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(188, 108, 37, 1)),url(../img/slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#contact input, section#contact textarea{
+    background-color: inherit;
+}
+
+section#contact input, section#contact textarea:focus{
+    background-color: var(--primary-color);
+}
+
+textarea{
+    resize: none;
+    height: 100px !important;
+}
+
+label{
+    color: white;
+    font-style: italic;
+}
+
+input::placeholder{
+    color: white!important;
+}
+
+.google-maps{
+    filter: grayscale(100);
+    border-radius: 1rem;
+}
