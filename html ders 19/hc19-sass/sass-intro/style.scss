@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variable Declaration
+
+$bgColor:pink;
+$fontSize:1.2rem;
+$fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fontColor: white;
+$navbarbgColor: #30a7c3;
+$myBorder: 2px solid brown;
+$bannerColor: hotpink;
+
+body{
+    background-color: $bgColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+// HEADER
+
+header{
+    background-color: $navbarbgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    img{
+        width: 80px;
+        border: $myBorder;
+        border-radius: 1rem;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            padding: 0.5rem;
+            &:hover{
+                text-decoration: none;
+                background-color: white;
+                color: $navbarbgColor;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+//  BANNER
+
+.banner{
+    background-color: $bannerColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
